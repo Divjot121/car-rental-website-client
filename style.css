@@ -263,7 +263,7 @@ section h2 {
 /* ** ==============HOME==============  ** */
 
 header {
-    background: url(Assets/Images/bg.jpg);
+    background: url(Assets/Images/bg.webp);
     background-size: cover;
     background-position: center;
     height: 88vh;
