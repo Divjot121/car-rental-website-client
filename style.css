@@ -153,22 +153,21 @@ section h2 {
 }
 
 .title h4::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 40%;
     left: -3rem;
-    height: .2rem;
+    height: 0.2rem;
     width: 2rem;
     background: var(--color-secondary);
-
 }
 
 .title h4::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 40%;
     right: -3rem;
-    height: .2rem;
+    height: 0.2rem;
     width: 2rem;
     background: var(--color-secondary);
 }
@@ -340,7 +339,7 @@ header .info p {
     z-index: 1;
     height: 50px;
     width: 50px;
-    border: .2rem solid var(--color-secondary);
+    border: 0.2rem solid var(--color-secondary);
     border-radius: 50%;
     color: var(--color-secondary);
     background: var(--color-primary);
@@ -358,22 +357,22 @@ header .info p {
 }
 
 .works-container .caption {
-     display: block;
-     color: var(--color-secondary);
+    display: block;
+    color: var(--color-secondary);
 }
 
 .works-container .step::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 25px;
     width: 100%;
     height: 4px;
-    background:  var(--color-secondary);
+    background: var(--color-secondary);
     z-index: -1;
 }
 
 .works-container .step:last-child::after {
-    display: none;   
+    display: none;
 }
 
 /* ** ==============ABOUT US============== ** */
@@ -383,8 +382,8 @@ header .info p {
 
 .about .title p {
     text-transform: uppercase;
-    font-size: .9rem;
-    padding-bottom: .5rem;
+    font-size: 0.9rem;
+    padding-bottom: 0.5rem;
 }
 
 .about-container {
@@ -399,7 +398,7 @@ header .info p {
     text-align: start;
 }
 
-.about .content .title h2{
+.about .content .title h2 {
     text-align: start;
 }
 
@@ -409,13 +408,13 @@ header .info p {
     justify-content: flex-end;
 }
 
-.about .content .image img{
+.about .content .image img {
     max-width: 600px;
     height: auto;
 }
 
 .about-container::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     right: 0;
@@ -429,8 +428,8 @@ header .info p {
 /* ** ==============SERVICES============== ** */
 .services-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
 }
 
 .services-container .card {
@@ -471,4 +470,79 @@ header .info p {
 
 .services-container .card p {
     color: var(--color-tertiary);
+}
+
+/* ** ==============CARS============== ** */
+
+.cars-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.cars-container img {
+    box-shadow: var(--shadow);
+    border-radius: .2rem;
+}
+
+.cars-container .info {
+    box-shadow: var(--shadow);
+    border-radius: 0 0 .2rem .2rem;
+    padding: 1rem 1rem 1rem 1.5rem;
+    position: relative;
+}
+
+.cars-container .info .tag {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--color-secondary);
+
+}
+
+.cars-container h5 {
+    text-transform: uppercase;
+    letter-spacing: .07rem;
+    font-weight: 700;
+}
+
+.cars-container .tag p {
+    font-size: 1rem;
+}
+
+.cars-container .info>p {
+    color: var(--color-tertiary);
+    font-size: .8rem;
+    font-weight: 600;
+    padding: .4rem 0;
+    text-transform: uppercase;
+}
+
+.cars-container .info a {
+    font-size: .75rem;
+    border: .1rem solid rgba(0, 0, 0, 0.1);
+    font-weight: 600;
+    padding: .1rem .5rem;
+    color: var(--color-tertiary);
+    text-transform: uppercase;
+    border-radius: .1rem;
+}
+
+.cars-container .info a:hover {
+    background: var(--color-secondary);
+    border-color: var(--color-secondary);
+    color: var(--color-primary);
+}
+
+.btn_call_more {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 45%;
+    font-size: 12.1px;
 }
