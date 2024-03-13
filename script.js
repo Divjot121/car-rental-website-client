@@ -1,12 +1,3 @@
-if ("serviceWorker" in navigator){
-    navigator.serviceWorker.register("service-worker.js").then(registration => {
-        console.log("service worker registered");
-        console.log(registration);
-    }).catch(error => {
-        console.log("service worker not registered");
-        console.log(error);
-    })
-}
 window.addEventListener('scroll', () => {
     document.querySelector('.nl-container').classList.toggle("scrolling", scrolly > 40)
 })
